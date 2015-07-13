@@ -43,6 +43,7 @@ public class MainActivity extends ActionBarActivity {
                 infos.add(sms);
             }
         }
+
         c.close();
         ListView listView = (ListView)findViewById(R.id.listview);
         listView.setAdapter(new SmsListA(this));
