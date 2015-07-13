@@ -35,7 +35,6 @@ public class MainActivity extends ActionBarActivity {
         Cursor c = this.managedQuery(ContactsContract.CommonDataKinds.Phone.CONTENT_URI,PHONE_PROJECTION,null,null,"date desc");
         int nameColumn=c.getColumnIndex("Phone.DISPLAY_NAME");
         int numColumn=c.getColumnIndex("Phone.NUMBER");
-
         if(c != null){
             while(c.moveToNext()){
                 Smsinfo sms = new Smsinfo();
